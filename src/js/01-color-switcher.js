@@ -1,7 +1,7 @@
 const startBtnEl = document.querySelector('button[data-start]');
 const stopBtnEl = document.querySelector('button[data-stop]');
 
-let intervalID = null;
+let intervalId = null;
 stopBtnEl.disabled = true;
 
 startBtnEl.addEventListener('click', onStartBtnClick);
@@ -19,13 +19,13 @@ function onStartBtnClick() {
   stopBtnEl.disabled = false;
   startBtnEl.disabled = true;
 
-  intervalID = setInterval(() => {
+  intervalId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }
 
 function onStopBtnClick() {
-  clearInterval(intervalID);
+  clearInterval(intervalId);
   startBtnEl.disabled = false;
   stopBtnEl.disabled = true;
 }
