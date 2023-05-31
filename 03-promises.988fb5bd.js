@@ -1,0 +1,2 @@
+!function(){function e(e,t){Math.random()>.3?console.log("✅ Fulfilled promise ".concat(e," in ").concat(t,"ms")):console.log("❌ Rejected promise ".concat(e," in ").concat(t,"ms"))}document.querySelector(".form").addEventListener("submit",(function(t){t.preventDefault();t.currentTarget.elements.delay.value,t.currentTarget.elements.step.value;for(var n=t.currentTarget.elements.amount.value,o=0;o<n;o+=1)e()}))}();
+//# sourceMappingURL=03-promises.988fb5bd.js.map
