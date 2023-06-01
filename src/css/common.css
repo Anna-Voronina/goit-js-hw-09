@@ -17,6 +17,19 @@ img {
   max-width: 100%;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  width: 70px;
+  height: 35px;
+  font-size: 16px;
+}
+
 .timer {
   display: flex;
   gap: 15px;

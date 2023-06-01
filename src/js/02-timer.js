@@ -17,7 +17,7 @@ refs.startBtnEl.disabled = true;
 const options = {
   enableTime: true,
   time_24hr: true,
-  defaultDate: '',
+  defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() < Date.now()) {
