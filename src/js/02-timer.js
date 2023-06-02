@@ -35,6 +35,9 @@ flatpickr(refs.dateInputEl, options);
 refs.startBtnEl.addEventListener('click', onStartBtnClick);
 
 function onStartBtnClick() {
+  refs.startBtnEl.disabled = true;
+  refs.dateInputEl.disabled = true;
+
   const intervalID = setInterval(() => {
     const diff = dateInputValue - Date.now();
 
